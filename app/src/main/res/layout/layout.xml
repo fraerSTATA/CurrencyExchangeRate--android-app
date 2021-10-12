@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone">
+
+   <LinearLayout
+
+       android:layout_width="350dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:textAlignment="center"
+       android:layout_gravity="center">
+       <ImageView
+           android:layout_marginTop="20dp"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:src="@drawable/bank"
+           android:scaleX="2"
+           android:scaleY="2"/>
+
+
+       <TextView
+           android:layout_marginTop="10dp"
+    android:layout_width="0dp"
+           android:layout_weight="3"
+    android:layout_height="100dp"
+    android:text="WorldSkills Bank"
+    android:textSize="35sp"
+
+    android:textAlignment="center"
+    /> </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:onClick="Departmenter"
+        android:background="@drawable/lay"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/key"
+            android:scaleX="1"
+            android:scaleY="1"/>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:text="Отделения и банкоматы"
+            android:textAlignment="center"
+
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:onClick="Money"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/lay">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            >
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/jojo" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Курсы валют"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.43"
+                android:id="@+id/mainData"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30sp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:text="USD"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+               android:layout_marginRight="100dp"
+                android:text="66.2"
+                android:id="@+id/usd"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="EUR"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="76.2"
+                android:id="@+id/euro"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.widget.Button
+        android:layout_width="match_parent"
+
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Войти"
+        android:textSize="40dp"
+        android:background="@drawable/round_large_button"
+        android:onClick="Enter"/>
+</LinearLayout>
